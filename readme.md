@@ -1,6 +1,5 @@
 # NLW Calendario COPA - Trilha Explore
 
-
 ![preview]
 
 > Trilha Explore
@@ -11,6 +10,7 @@ Projeto feito no Evento Copa na Rocketseat
 
  ## Tecnologias Utilizada
 
+ - JavaScript
  - HTML
  - CSS
  - GIT e Github

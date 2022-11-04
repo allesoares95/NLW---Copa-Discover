@@ -4,15 +4,37 @@
   box-sizing: border-box; /*usada para calcular larguras (widths) e alturas (heights) dos elementos. */
 }
 
+:root{
+  --card-title-border-color: #746615;
+  --card-color-primary: #f7dd43;
+  --card-bg-color: #1d1c19;
+  --bg: url(./assets/bgYellow.svg);
+}
+
+body.blue {
+  --card-title-border-color: #338AF3;
+  --card-color-primary: #338AF3;
+  --card-bg-color: #1d1c19;
+  --bg: url(./assets/bgBlue.svg);
+}
+
+body.green{
+  --card-title-border-color: #047c3f;
+  --card-color-primary: #047c3f;
+  --card-bg-color: #1d1c19;
+  --bg: url(./assets/bgGreen.svg);
+}
+
 ul {
   list-style: none;
 }
 
 body {
   background-color: #121214; 
-  background-image: url(./assets/bg.svg);
-  background-position-x: center;
-  background-position-y: -208%;
+  background-image: var(--bg);
+  background-position: center ;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 body * {
@@ -40,8 +62,8 @@ header {
 .card {
   padding: 32px 23px; /* preenchimento */
   text-align: center;
-  background: #1D1C19;
-  border-bottom: 2px solid #F7DD43;
+  background: var(--card-bg-color);
+  border-bottom: 2px solid var(--card-color-primary);
   border-radius: 6px;
 }
 
@@ -52,14 +74,14 @@ header {
   align-items: center;  /* alinhamento de linha */
   
   padding: 8px 16px; 
-  border: 1px solid #746615; /* borda */
+  border: 1px solid var(--card-title-border-color); /* borda */
   border-radius: 6px;   /* arrendondamento de borda */
 
   width: fit-content;
   margin-inline: auto;
   margin-bottom: 53px;
 
-  color: #F7DD43;
+  color: #f7dd43;
 }
 
 .card h2 span {
@@ -94,3 +116,28 @@ header {
 
   color: #E1E1E6;
 }
+
+.card h2:hover,         /*transformação da imagem ou texto */
+.card ul li strong:hover, 
+.card ul li img:hover {
+  transform: scale(1.1)
+}
+
+.card h2,             /* colocando tempo na transformação */
+.card ul li strong,   
+.card ul li img {
+  transition: transform 0.3s;
+} 
+
+
+  /* @media pegue o proximo elemento de cima e jogue para baixo
+
+  @media (min-width: 750px) {
+  #cards {
+    max-width: 670px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+*/

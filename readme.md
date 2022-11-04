@@ -7,7 +7,6 @@ Evento exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologia
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
@@ -32,6 +31,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 
  0 Calendário da Copa é um projeto que mostra os Jogos da Copa de 2022
+ [Acesse o Projeto](https://allesoares95.github.io/NLW---Copa-Discover/)
 
 
 ## :memo: Licença
